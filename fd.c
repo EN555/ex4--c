@@ -183,7 +183,6 @@ if(argc==1){
 print_increase_words(&head, 0);
 }
 else if(!strcmp(argv[1],"r")){
-	printf("%s", argv[1]);
 print_decrease_words(&head, 0);
 }
 
