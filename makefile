@@ -3,13 +3,13 @@ CC = gcc
 
 all: frequency 
 
-frequency: fd.o
-	$(CC) $(FLAGS) fd.o -o frequency
+frequency: main.o
+	$(CC) $(FLAGS) main.o -o frequency
 			
-fd.o: fd.c
-	$(CC) $(FLAGS) -c fd.c -o fd.o
+main.o: main.c
+	$(CC) $(FLAGS) -c main.c -o main.o
 		
 .PHONY: clean all
 
 clean:
-	rm frequency fd.o
+	rm frequency main.o
